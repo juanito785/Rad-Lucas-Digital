@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private int orb_cyan_count = 0;
     private int orb_purple_count = 0;
 
+    public int game_disk_count = 0;
     public int score = 0;
     public int health = 5;
     public int strength = 5;
@@ -49,7 +50,14 @@ public class Player : MonoBehaviour
             print("Cyan key count is " + orb_cyan_count);
         }
 
-
+        //GameDisk Collision: Gain 50 points
+        if(other.gameObject.tag == "VideoGameDisk")
+        {
+            print("Game Disk found! Ready for next level.");
+            other.gameObject.SetActive(false);
+            game_disk_count++;
+            score = score + 50;
+        }
 
 
 
@@ -79,6 +87,7 @@ public class Player : MonoBehaviour
                         orb_cyan_count -= other.gameObject.GetComponent<Door>().number_of_cyan_locks;
                         other.gameObject.SetActive(false);
                         print("Green door opened");
+                        score = score + 10;
 
                     }
                     
@@ -121,6 +130,7 @@ public class Player : MonoBehaviour
                         orb_blue_count -= other.gameObject.GetComponent<Door>().number_of_locks;
                         other.gameObject.SetActive(false);
                         print("Blue door opened");
+                        score = score + 10;
                     }
                         
                 }
@@ -160,6 +170,7 @@ public class Player : MonoBehaviour
                     orb_gold_count -= other.gameObject.GetComponent<Door>().number_of_gold_locks;
                     other.gameObject.SetActive(false);
                     print("Red door opened");
+                    score = score + 10;
                 }
                     
             }
@@ -168,5 +179,12 @@ public class Player : MonoBehaviour
                 print("Require " + other.gameObject.GetComponent<Door>().number_of_red_locks + " red key and "+other.gameObject.GetComponent<Door>().number_of_gold_locks +" gold key "+"to open this red door, " + orb_red_count + " red keys have been picked up, "+orb_gold_count+" gold key have been picked up." );
             }
         }
+
+        if(other.gameObject.tag == "EnemyBullet")
+        {
+            other.gameObject.SetActive(false);
+            health--;
+        }
+    
     }
 }  // end of Player Script

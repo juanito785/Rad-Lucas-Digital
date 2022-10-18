@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Orb Gold
+  - Orb Green
+  - Door Blue
+  - Orb Red
+  - Orb Blue
+  - Door Red
+  - Door Green
+  - Orb Purple
+  - Orb Cyan
+  - VideoGameDisk
+  - Terrain
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
