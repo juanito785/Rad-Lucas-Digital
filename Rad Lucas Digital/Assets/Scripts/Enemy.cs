@@ -16,11 +16,11 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        Vector3 LookVector = player.transform.position - transform.position;
-        LookVector.y = transform.position.y;
-        Rotate = Quaternion.LookRotation(LookVector);
+        Vector3 lookVector = player.transform.position - transform.position;
+        lookVector.y = transform.position.y;
+        Rotate = Quaternion.LookRotation(lookVector);
         transform.rotation = Quaternion.Slerp(transform.rotation, Rotate, 1);
 
         if(Input.GetButtonDown("Fire1"))
