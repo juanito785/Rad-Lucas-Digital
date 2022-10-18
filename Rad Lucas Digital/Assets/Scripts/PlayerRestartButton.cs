@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRestartButton : MonoBehaviour
+public class PlayerRestartButton : Player
 {
     //Set Start position
     private Vector3 startPos;
@@ -17,12 +17,19 @@ public class PlayerRestartButton : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public new void Update()
     {
         if (Input.GetKeyDown("r"))
         {
             Respawn();
         }
+
+        if (health <= 0)
+        {
+            health = health + 5;
+            Respawn();
+        }
+        
     }
 
     public void Respawn()

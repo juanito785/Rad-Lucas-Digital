@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector3 lookVector = player.transform.position - transform.position;
-        lookVector.y = transform.position.y;
+        lookVector.y = player.transform.position.y;
         Rotate = Quaternion.LookRotation(lookVector);
         transform.rotation = Quaternion.Slerp(transform.rotation, Rotate, 1);
 

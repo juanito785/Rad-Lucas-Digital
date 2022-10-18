@@ -119,11 +119,11 @@ GameObject:
   - component: {fileID: 33607222639043000}
   - component: {fileID: 136500211140333422}
   - component: {fileID: 23472012978526086}
-  - component: {fileID: 114748568770751014}
   - component: {fileID: 54765787227780542}
+  - component: {fileID: 114748568770751014}
   - component: {fileID: 2139520757}
   - component: {fileID: 469752199652890672}
-  - component: {fileID: 8814479199244755109}
+  - component: {fileID: 2410721337689693221}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -209,19 +209,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &114748568770751014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563296582415156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e568df1be60b23f48a3d7998fa8d45e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump_force: 5
 --- !u!54 &54765787227780542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -238,6 +225,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &114748568770751014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563296582415156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e568df1be60b23f48a3d7998fa8d45e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump_force: 5
 --- !u!114 &2139520757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +253,7 @@ MonoBehaviour:
   score: 0
   health: 5
   strength: 5
+  VideoGameDiskCount: 0
 --- !u!114 &469752199652890672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a3048b8b0ffcb43a4907fab5148f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8814479199244755109
+--- !u!114 &2410721337689693221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,6 +281,8 @@ MonoBehaviour:
   score: 0
   health: 5
   strength: 5
+  VideoGameDiskCount: 0
   scoreText: {fileID: 0}
   healthText: {fileID: 0}
   strengthText: {fileID: 0}
+  VideoGameDisk: {fileID: 0}
