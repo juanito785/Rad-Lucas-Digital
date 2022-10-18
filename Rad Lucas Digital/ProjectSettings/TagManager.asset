@@ -16,6 +16,7 @@ TagManager:
   - VideoGameDisk
   - Terrain
   - EnemyBullet
+  - Spike
   layers:
   - Default
   - TransparentFX

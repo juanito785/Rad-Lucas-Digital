@@ -185,6 +185,11 @@ public class Player : MonoBehaviour
             other.gameObject.SetActive(false);
             health--;
         }
+
+        if(other.gameObject.tag == "Spike")
+        {
+            health = health - 2;
+        }
     
     }
 }  // end of Player Script
