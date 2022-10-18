@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRestartButton : Player
+public class PlayerRestartButton : MonoBehaviour
 {
     //Set Start position
     private Vector3 startPos;
@@ -23,16 +23,10 @@ public class PlayerRestartButton : Player
         {
             Respawn();
         }
-
-        if (health <= 0)
-        {
-            Respawn();
-        }
     }
 
     public void Respawn()
     {
         transform.position = startPos;
-        health = health + 5;
     }
 }
