@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        InvokeRepeating("shoot", 0f, 5f);
     }
 
     // Update is called once per frame
@@ -23,10 +24,10 @@ public class Enemy : MonoBehaviour
         Rotate = Quaternion.LookRotation(lookVector);
         transform.rotation = Quaternion.Slerp(transform.rotation, Rotate, 1);
 
-        if(Input.GetButtonDown("Fire1"))
+        /**if(Input.GetButtonDown("Fire1"))
         {
             shoot();
-        }
+        }**/
 
     }
 
