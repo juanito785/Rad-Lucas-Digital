@@ -1465,6 +1465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1001 &499510859
@@ -1702,6 +1706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1 &555515317
@@ -4284,6 +4292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1 &1090104444
@@ -4571,6 +4583,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103290041}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1130745849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1563296582415156, guid: dabb3ed4badbc17418dc6b73d4b7b6a8, type: 3}
+  m_PrefabInstance: {fileID: 479414923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1156316911
 GameObject:
   m_ObjectHideFlags: 0
@@ -4694,6 +4711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1 &1217554348
@@ -5048,6 +5069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1001 &1283697042
@@ -6709,6 +6734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1 &1726137706
@@ -8609,6 +8638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy(Robo) (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5419997636018806765, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1130745849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c3e31443297054695e7bb07f7b0d44, type: 3}
 --- !u!1 &2082849886
