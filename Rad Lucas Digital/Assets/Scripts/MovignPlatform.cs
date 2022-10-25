@@ -19,11 +19,11 @@ public class MovignPlatform : MonoBehaviour
         Rigidbody.velocity = transform.forward * speed;
     }
     // Don't want this part for now. Decide after playtest tmr
-    /**private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Terrain")
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
-    }**/
+    }
 }

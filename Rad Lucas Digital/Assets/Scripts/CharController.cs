@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour {
     //how hard character jumps(up to change so its in public)
-    public float jump_force = 5;
+    public float jump_force;
     //tells you if you are within .1 Unity Unit from the ground
     private bool is_grounded;
     //The rigid body attached to the player
