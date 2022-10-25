@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number_of_locks: 0
   number_of_green_locks: 0
-  number_of_red_locks: 1
+  number_of_red_locks: 0
   number_of_gold_locks: 0
   number_of_cyan_locks: 0
   number_of_purple_locks: 1
