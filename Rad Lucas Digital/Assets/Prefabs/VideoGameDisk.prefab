@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8432966319095073427}
   - component: {fileID: 6851378694076463216}
   - component: {fileID: 614658398329757023}
+  - component: {fileID: 1394194361393833855}
   m_Layer: 0
   m_Name: VideoGameDisk
   m_TagString: Untagged
@@ -96,3 +97,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &1394194361393833855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619292250096721490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135399e0868c7b04cbdfb28ad3ded6e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
