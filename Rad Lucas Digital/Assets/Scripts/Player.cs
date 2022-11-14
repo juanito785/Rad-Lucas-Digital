@@ -172,7 +172,22 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(other.gameObject.tag == "VideoGameDisk")
+        if (other.gameObject.tag == "Collectible")
+        {
+            other.gameObject.SetActive(false);
+            score += 20;
+        }
+
+        if (other.gameObject.tag == "HealthPack")
+        {
+            other.gameObject.SetActive(false);
+            if (health <= 4)
+            {
+                health += 1;
+            }
+        }
+
+        if (other.gameObject.tag == "VideoGameDisk")
         {
             other.gameObject.SetActive(false);
             score = score + 50;

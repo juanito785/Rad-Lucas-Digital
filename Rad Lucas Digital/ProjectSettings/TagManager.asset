@@ -17,6 +17,8 @@ TagManager:
   - Terrain
   - EnemyBullet
   - Spike
+  - HealthPack
+  - Collectible
   layers:
   - Default
   - TransparentFX
