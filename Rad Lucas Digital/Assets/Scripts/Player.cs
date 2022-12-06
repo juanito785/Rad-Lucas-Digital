@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     public int score = 0;
     public int health = 5;
     public int strength = 5;
-    public int VideoGameDiskCount = 0;
 
 
     //Add score of +5 if player opens a door
@@ -80,7 +79,7 @@ public class Player : MonoBehaviour
                         orb_cyan_count -= other.gameObject.GetComponent<Door>().number_of_cyan_locks;
                         other.gameObject.SetActive(false);
                         print("Green door opened");
-                        score = score + 20;
+
                     }
                     
 
@@ -122,7 +121,6 @@ public class Player : MonoBehaviour
                         orb_blue_count -= other.gameObject.GetComponent<Door>().number_of_locks;
                         other.gameObject.SetActive(false);
                         print("Blue door opened");
-                        score = score + 20;
                     }
                         
                 }
@@ -162,7 +160,6 @@ public class Player : MonoBehaviour
                     orb_gold_count -= other.gameObject.GetComponent<Door>().number_of_gold_locks;
                     other.gameObject.SetActive(false);
                     print("Red door opened");
-                    score = score + 20;
                 }
                     
             }
@@ -170,48 +167,6 @@ public class Player : MonoBehaviour
             {
                 print("Require " + other.gameObject.GetComponent<Door>().number_of_red_locks + " red key and "+other.gameObject.GetComponent<Door>().number_of_gold_locks +" gold key "+"to open this red door, " + orb_red_count + " red keys have been picked up, "+orb_gold_count+" gold key have been picked up." );
             }
-        }
-
-        if (other.gameObject.tag == "Collectible")
-        {
-            other.gameObject.SetActive(false);
-            score += 20;
-        }
-
-        if (other.gameObject.tag == "HealthPack")
-        {
-            other.gameObject.SetActive(false);
-            if (health <= 4)
-            {
-                health += 1;
-            }
-        }
-
-        if (other.gameObject.tag == "VideoGameDisk")
-        {
-            other.gameObject.SetActive(false);
-            score = score + 50;
-        }
-
-        if(other.gameObject.tag == "EnemyBullet")
-        {
-            other.gameObject.SetActive(false);
-            health = health - 2;
-        }
-
-        if(other.gameObject.tag == "Spike")
-        {
-            health--;
-        }
-    }
-
-    //constantly updating
-    public void Update()
-    {
-        //works in tandum with respawn function
-        if (health <= 0)
-        {
-            health = health + 5;
         }
     }
 }  // end of Player Script

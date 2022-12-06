@@ -22,7 +22,7 @@ public class PlayerInfoDisplay : Player
         scoreText.text = "Score: " + score;
         healthText.text = "Health: " + health;
         strengthText.text = "Strength: " + strength;
-        VideoGameDisk.text = "Video Game Disks Aquired: " + VideoGameDiskCount;
+        //VideoGameDisk.text = "Video Game Disks Aquired: " + VideoGameDiskCount;
         if (health <= 0)
         {
             health = health + 5;

@@ -43,13 +43,13 @@ public class WallRunning : MonoBehaviour
     [Header("References")]
     public Transform orientation;
     public ExPlayerCam cam;
-    private PlayerMovementAdvanced pm;
+    private PlayerMovementModified pm;
     private Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        pm = GetComponent<PlayerMovementAdvanced>();
+        pm = GetComponent<PlayerMovementModified>();
     }
 
     private void Update()
@@ -58,6 +58,7 @@ public class WallRunning : MonoBehaviour
         StateMachine();
     }
 
+    //Only fixed update works for some reason
     private void FixedUpdate()
     {
         if (pm.wallrunning)
