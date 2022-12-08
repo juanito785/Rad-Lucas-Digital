@@ -193,6 +193,10 @@ public class Player : MonoBehaviour
             score = score + 5;
         }
 
+        if (other.gameObject.tag == "Pit")
+        {
+            health = health - 5;
+        }
         
         
     }

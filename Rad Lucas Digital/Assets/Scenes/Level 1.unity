@@ -18258,9 +18258,10 @@ GameObject:
   - component: {fileID: 1888399299}
   - component: {fileID: 1888399298}
   - component: {fileID: 1888399297}
+  - component: {fileID: 1888399301}
   m_Layer: 3
   m_Name: Pit (1)
-  m_TagString: Untagged
+  m_TagString: Pit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18336,12 +18337,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888399296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.7, y: -3.9, z: 27.6}
+  m_LocalPosition: {x: -13.7, y: -14.4, z: 27.6}
   m_LocalScale: {x: 53.71254, y: 53.71254, z: 53.71254}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1888399301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888399296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1899871522
 GameObject:
   m_ObjectHideFlags: 0
