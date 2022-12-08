@@ -8,7 +8,7 @@ public class PlayerInfoDisplay : Player
     public Text scoreText;
     public Text healthText;
     public Text strengthText;
-    public Text VideoGameDisk;
+    public Text GameDiskText;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class PlayerInfoDisplay : Player
         scoreText.text = "Score: " + score;
         healthText.text = "Health: " + health;
         strengthText.text = "Strength: " + strength;
+        GameDiskText.text = "GameDiskCollected: " + gameDiskCount;
         //VideoGameDisk.text = "Video Game Disks Aquired: " + VideoGameDiskCount;
         if (health <= 0)
         {
